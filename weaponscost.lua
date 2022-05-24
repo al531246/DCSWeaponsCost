@@ -92,12 +92,14 @@ function Process_Event(event)
 end
 
 function Frosty_ShotEvent:onEvent(event)
-	if coalition_mode == true then
-		if event.initiator:getCoalition() == coalition_choice then
+	if event.id == 1 or 23 or 24 then
+		if coalition_mode == true then
+			if event.initiator:getCoalition() == coalition_choice then
+				Process_Event(event)
+			end
+		else
 			Process_Event(event)
 		end
-	else
-		Process_Event(event)
 	end
 end
 
