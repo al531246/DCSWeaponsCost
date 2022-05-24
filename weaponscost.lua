@@ -1,11 +1,14 @@
 local debug_mode = false
 
+local coalition_mode = true
+local coalition_choice = 2 --neutral == 0, red == 1, blue == 2
+
 Frosty_ShotEvent = {}
 subtotal = 0
 shooting_start = 0
 
 local gun_rof = {
-['M_230_new'] = 620 / 60,
+['M_230_new'] = 620 / 60,  -- / 60 to get rounds per second from minute
 ['M_134'] = 4800 / 60,
 ['GAU_8'] = 4200 / 60
 }
@@ -56,7 +59,7 @@ function db_fprint(...)
 	end
 end
 
-function Frosty_ShotEvent:onEvent(event)
+function Process_Event(event)
 	if event.id == 1 then
 		db_fprint("Weapon Name: " .. event.weapon:getTypeName())
 		db_fprint("Initiator Coalition: " .. event.initiator:getCoalition())
@@ -85,6 +88,16 @@ function Frosty_ShotEvent:onEvent(event)
 		else
 			fprint("Weapon RoF Not Found: " .. event.weapon_name)
 		end
+	end
+end
+
+function Frosty_ShotEvent:onEvent(event)
+	if coalition_mode == true then
+		if event.initiator:getCoalition == coalition_choice then
+			Process_Event(event)
+		end
+	else
+		Process_Event(event)
 	end
 end
 
