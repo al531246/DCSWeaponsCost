@@ -50,7 +50,7 @@ function Frosty_ShotEvent:onEvent(event)
 		if weaponcost[event.weapon:getTypeName()] ~= nil then
 			subtotal = subtotal + weaponcost[event.weapon:getTypeName()]
 		else
-			fprint("Weapon Not Found: " .. event.weapon:getTypeName())
+			fprint("Weapon Cost Not Found: " .. event.weapon:getTypeName())
 		end
 	end
 	if event.id == 23 then
@@ -67,7 +67,7 @@ function Frosty_ShotEvent:onEvent(event)
 			if weaponcost[event.weapon_name] ~= nil then
 				subtotal = subtotal + (weaponcost[event.weapon_name] * rounds_fired)
 			else
-				fprint("Weapon Not Found: " .. event.weapon_name)
+				fprint("Weapon Cost Not Found: " .. event.weapon_name)
 			end
 		else
 			fprint("Weapon RoF Not Found: " .. event.weapon_name)
