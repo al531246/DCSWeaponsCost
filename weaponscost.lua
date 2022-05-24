@@ -14,7 +14,10 @@ local weaponcost = {
 
 -- ROCKETS --
 ['HYDRA_70_M151'] = 2000,
-['HYDRA_70_M229'] = 2500
+['HYDRA_70_M229'] = 2500,
+['HYDRA_70_M257'] = 2500,
+['HYDRA_70_M274'] = 2500,
+['HYDRA_70_M282'] = 2500
 }
 
 function fprint(...)
