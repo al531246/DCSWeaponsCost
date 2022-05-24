@@ -3,7 +3,11 @@ local debug_mode = false
 Frosty_ShotEvent = {}
 subtotal = 0
 shooting_start = 0
-local m230_rof = 620 / 60
+
+local gun_rof = {
+['M_230_new'] = 620 / 60,
+['M_134'] = 4800 / 60
+}
 
 local weaponcost = {
 -- MISSILES --
@@ -23,7 +27,7 @@ local weaponcost = {
 ['HYDRA_70_M274'] = 2550,
 ['HYDRA_70_M282'] = 2900,
 -- Huey
-['HYDRA_70_MK5'] = 1800
+['HYDRA_70_MK5'] = 1000
 }
 
 function fprint(...)
@@ -57,12 +61,16 @@ function Frosty_ShotEvent:onEvent(event)
 	if event.id == 24 then
 		local time_taken = event.time - shooting_start
 		db_fprint("Shooting Duration: " .. time_taken)
-		local rounds_fired = math.modf(time_taken * m230_rof)
-		db_fprint("Rounds Fired: " .. rounds_fired)
-		if weaponcost[event.weapon_name] ~= nil then
-			subtotal = subtotal + (weaponcost[event.weapon_name] * rounds_fired)
+		if gun_rof[event.weapon_name] ~= nil then
+			local rounds_fired = math.modf(time_taken * gun_rof[event.weapon_name])
+			db_fprint("Rounds Fired: " .. rounds_fired)
+			if weaponcost[event.weapon_name] ~= nil then
+				subtotal = subtotal + (weaponcost[event.weapon_name] * rounds_fired)
+			else
+				fprint("Weapon Not Found: " .. event.weapon_name)
+			end
 		else
-			fprint("Weapon Not Found: " .. event.weapon_name)
+			fprint("Weapon RoF Not Found: " .. event.weapon_name)
 		end
 	end
 end
