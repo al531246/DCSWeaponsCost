@@ -6,7 +6,8 @@ shooting_start = 0
 
 local gun_rof = {
 ['M_230_new'] = 620 / 60,
-['M_134'] = 4800 / 60
+['M_134'] = 4800 / 60,
+['GAU_8'] = 4200 / 60
 }
 
 local weaponcost = {
@@ -14,14 +15,13 @@ local weaponcost = {
 ['AGM_114K'] = 45449,
 
 -- GUN -- 
--- AH64D
 ['M_230_new'] = 105,
--- Huey
 ['M_134'] = 4,
+--['GAU_8'] = 137,
 
 -- ROCKETS --
 -- AH64D
-['HYDRA_70_M151'] = 2000,
+['HYDRA_70_M151'] = 1800,
 ['HYDRA_70_M229'] = 2500,
 ['HYDRA_70_M257'] = 2300,
 ['HYDRA_70_M274'] = 2550,
