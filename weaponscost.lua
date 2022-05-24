@@ -93,7 +93,7 @@ end
 
 function Frosty_ShotEvent:onEvent(event)
 	if coalition_mode == true then
-		if event.initiator:getCoalition == coalition_choice then
+		if event.initiator:getCoalition() == coalition_choice then
 			Process_Event(event)
 		end
 	else
