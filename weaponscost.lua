@@ -8,12 +8,14 @@ subtotal = 0
 shooting_start = 0
 
 local gun_rof = {
+['BrowningM2'] = 798 / 60, -- some aircraft have multiple guns tho...
 ['M_230_new'] = 620 / 60,  -- / 60 to get rounds per second from minute
 ['M_134'] = 4800 / 60,
 ['M_61'] = 6000 / 60,
+['M-61A1'] = 6000 / 60, -- F-14's gun
 ['GAU_8'] = 4200 / 60,
-['GSh_30_1'] = 1500 / 60,
-['GSh_30_2'] = 2460 / 60,
+['GSh_30_1'] = 1500 / 60, -- Su-27 gun
+['GSh_30_2'] = 2460 / 60, -- Su-25T gun
 --------------------------------------------
 ['GUN_END'] = 1  -- DO NOT TOUCH THIS LINE
 --------------------------------------------
@@ -26,12 +28,14 @@ local weaponcost = {
 -- LAST UPDATED 25 MAY 2022
 
 -- ALL GUNS -- 
+['BrowningM2'] = 3.30 -- 24/MAY/2022
 ['M_230_new'] = 139, -- 24/MAY/2022
 ['M_134'] = 1, -- 24/MAY/2022
 ['M_61'] = 27, -- 24/MAY/2022
+['M-61A1'] = 27, -- 24/MAY/2022
 ['GAU_8'] = 137, -- 24/MAY/2022
-['GSh_30_1'] = 50, -- UNKNOWN Su-27 gun
-['GSh_30_2'] = 50, -- UNKNOWN Su-25T gun
+['GSh_30_1'] = 50, -- UNKNOWN
+['GSh_30_2'] = 50, -- UNKNOWN
 
 
 -- CRUISE MISSILES -- 
