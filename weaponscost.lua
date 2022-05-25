@@ -10,7 +10,13 @@ shooting_start = 0
 local gun_rof = {
 ['M_230_new'] = 620 / 60,  -- / 60 to get rounds per second from minute
 ['M_134'] = 4800 / 60,
-['GAU_8'] = 4200 / 60
+['M_61'] = 6000 / 60,
+['GAU_8'] = 4200 / 60,
+['GSh_30_1'] = 1500 / 60,
+['GSh_30_2'] = 2460 / 60,
+--------------------------------------------
+['GUN_END'] = 1  -- DO NOT TOUCH THIS LINE
+--------------------------------------------
 }
 
 local weaponcost = {
@@ -22,8 +28,11 @@ local weaponcost = {
 -- ALL GUNS -- 
 ['M_230_new'] = 139, -- 24/MAY/2022
 ['M_134'] = 1, -- 24/MAY/2022
-['GAU_8'] = 137, -- 24/MAY/2022
 ['M_61'] = 27, -- 24/MAY/2022
+['GAU_8'] = 137, -- 24/MAY/2022
+['GSh_30_1'] = 50, -- UNKNOWN Su-27 gun
+['GSh_30_2'] = 50, -- UNKNOWN Su-25T gun
+
 
 -- CRUISE MISSILES -- 
 ['BGM_109B'] =  1, -- TBA (TOMAHAWK)
@@ -208,15 +217,15 @@ local weaponcost = {
 ['GBU_28'] = 1,  -- TBA
 ['GBU_29'] = 1,  -- TBA
 ['GBU_30'] =  1,  -- TBA
-['GBU_31'] = CostOfMk_84 + 40532,
+--['GBU_31'] = CostOfMk_84 + 40532,
 ['GBU_31_V_2B'] = 1,  -- TBA
-['GBU_31_V_3B'] = 12 + CostOfMk_84 + 40532,  -- $12 is cost of BLU-109
+--['GBU_31_V_3B'] = 12 + CostOfMk_84 + 40532,  -- $12 is cost of BLU-109
 ['GBU_31_V_4B'] = 1,  -- TBA
 ['GBU_32_V_2B'] = 1,  -- TBA
-['GBU_38'] = CostOfMk_82 + 40532,  -- 40532 is value of JDAM kit
+--['GBU_38'] = CostOfMk_82 + 40532,  -- 40532 is value of JDAM kit
 ['GBU_54_V_1B'] = 1,  -- TBA
-['HEBOMB'] = -- TBA (AJS-37 M/71 HE-Bomb)
-['HEBOMBD'] = -- TBA (AJS-37 M/71 HE-Bomb w chute)
+['HEBOMB'] = 1,-- TBA (AJS-37 M/71 HE-Bomb)
+['HEBOMBD'] = 1,-- TBA (AJS-37 M/71 HE-Bomb w chute)
 ['LYSBOMB'] = 1,  -- TBA (AJS-37 VIGGEN THING)
 ['LYSBOMB_CANDLE'] = 1,  -- TBA (AJS-37 VIGGEN THING)
 ['ROCKEYE'] = 1,  -- TBA
@@ -382,7 +391,12 @@ local weaponcost = {
 
 -- REDFOR ROCKETS --
 ['BRM-1_90MM'] = 1, -- TBA (JF-17 ROCKETS)
+['C_5'] = 1, -- TBA
+['C_13'] = 1, -- TBA
+['C_24'] = 1, -- TBA
+['C_80FP2'] = 1, -- TBA
 ['S_25L'] = 1, -- TBA
+['S_25-O'] = 1, -- TBA
 
 ----------------------------------------------
 ['WEAPONS_END'] = 1  -- DO NOT TOUCH THIS LINE
