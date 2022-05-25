@@ -23,40 +23,37 @@ local gun_rof = {
 
 local weaponcost = {
 -- WW2 weapons are not included
--- All pricing data is set for the current year (2022) where possible. Otherwise most up to date price data is used
+-- All pricing data is adjusted for inflation to current year (2022) where possible. Otherwise most up to date price data is used
 -- All prices in USD $
 -- LAST UPDATED 25 MAY 2022
 
 -- ALL GUNS -- 
-['BrowningM2'] = 3.30 -- 24/MAY/2022
-['M_230_new'] = 139, -- 24/MAY/2022
-['M_134'] = 1, -- 24/MAY/2022
-['M_61'] = 27, -- 24/MAY/2022
-['M-61A1'] = 27, -- 24/MAY/2022
-['GAU_8'] = 137, -- 24/MAY/2022
+['BrowningM2'] = 3.30 -- 24 MAY 2022
+['M_230_new'] = 139, -- 24 MAY 2022
+['M_134'] = 1, -- 24 MAY 2022
+['M_61'] = 27, -- 24 MAY 2022
+['M-61A1'] = 27, -- 24 MAY 2022
+['GAU_8'] = 137, -- 24 MAY 2022
 ['GSh_30_1'] = 50, -- UNKNOWN
 ['GSh_30_2'] = 50, -- UNKNOWN
 
-
 -- CRUISE MISSILES -- 
-['BGM_109B'] =  1, -- TBA (TOMAHAWK)
-['HY-2'] =  1, -- TBA Silkwork missile
-['KD-20'] =  1, -- TBA Chinese cruise missile
-['KD-63'] =  1, -- TBA Chinese LACM
-['KD-63B'] =  1,-- TBA Improved Chinese LACM
+['BGM_109B'] = 1, -- TBA (TOMAHAWK)
+['HY-2'] = 1, -- TBA Silkwork missile
+['KD-20'] = 1, -- TBA Chinese cruise missile
+['KD-63'] = 1, -- TBA Chinese LACM
+['KD-63B'] = 1,-- TBA Improved Chinese LACM
 ['SCUD_RAKETA'] = 1, -- TBA
 
 -- ATGM --
-['KONKURS'] =  1, -- TBA
-['MALUTKA'] =  1, -- TBA
+['KONKURS'] = 1, -- TBA
+['MALUTKA'] = 1, -- TBA
 ['P_9M117'] = 1, -- TBA Bastion ATGM
 ['P_9M133'] = 1, -- TBA Kornet ATGM
 ['REFLEX'] = 1, -- TBA 9M119 Svir AT-11
 ['SVIR'] = 1, -- TBA
 ['TOW'] = 1, -- TBA
 ['TOW2'] = 1, -- TBA
-
-
 
 
 ----------------------------------------------
@@ -70,18 +67,18 @@ local weaponcost = {
 ['AIM-9J'] = 1, -- TBA
 ['AIM-9JULI'] = 1, -- TBA
 ['AIM-9L'] = 1, -- TBA
-['AIM-9P'] =  1, -- TBA
-['AIM-9P5'] =  1, -- TBA
-['AIM-120'] = 1273809, -- 24/MAY/2022 PRICED ASSUMED TO BE SAME AS 120C
-['AIM-120B'] = 1273809, -- 24/MAY/2022 PRICED ASSUMED TO BE SAME AS 120C
-['AIM-120C'] = 1273809, -- 24/MAY/2022
+['AIM-9P'] = 1, -- TBA
+['AIM-9P5'] = 1, -- TBA
+['AIM-120'] = 1273809, -- 24 MAY 2022 PRICED ASSUMED TO BE SAME AS 120C
+['AIM-120B'] = 1273809, -- 24 MAY 2022 PRICED ASSUMED TO BE SAME AS 120C
+['AIM-120C'] = 1273809, -- 24 MAY 2022
 ['AIM_54'] = 1, -- TBA
 ['AIM_54A_Mk47'] = 1, -- TBA
 ['AIM_54A_Mk60'] = 1, -- TBA
 ['AIM_54C_Mk47'] = 1, -- TBA
 ['AIM_7'] = 1, -- TBA
-['AIM_9'] = 178387,  -- 24/MAY/2022 AIM-9M
-['AIM-9X'] = 460807, -- 24/MAY/2022
+['AIM_9'] = 178387,  -- 24 MAY 2022 AIM-9M
+['AIM-9X'] = 460807, -- 24 MAY 2022
 ['CATM_9M'] = 1, -- TBA
 ['GAR-8'] = 1, -- TBA 1st Gen Sidewinder
 ['Matra Super 530D'] = 1, -- TBA
@@ -96,7 +93,7 @@ local weaponcost = {
 ['Super_530D'] = 1, -- TBA
 
 -- BLUFOR A2G MISSILES --
-['AGM_114K'] = 109628, -- 24/MAY/2022
+['AGM_114K'] = 109628, -- 24 MAY 2022
 ['AGM_62'] = 1,  -- TBA
 ['ADM_141A'] = 1, -- TBA
 ['ADM_141B'] = 1, -- TBA
@@ -185,7 +182,7 @@ local weaponcost = {
 ['BIN_200'] = 1,  -- TBA (200kg Napalm Incendiary Bomb USED ON C-101)
 ['BLG66'] = 1,  -- TBA
 ['BLG66_BELOUGA'] = 1,  -- TBA
-['BL_755'] = 1,  -- TBA
+['BL_755'] = 39985,  -- 25 MAY 2022
 ['BR_250'] = 1,  -- TBA (USED ON C-101)
 ['BR_500'] = 1,  -- TBA (USED ON C-101)
 ['CBU_52B'] = 1,  -- TBA
