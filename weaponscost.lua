@@ -63,7 +63,7 @@ local weaponcost = {
 -- BLUFOR A2A MISSILES --
 ['AIM-7E'] = 1, -- TBA
 ['AIM-7F'] = 1, -- TBA
-['AIM-7MH'] = 1, -- TBA
+['AIM-7MH'] = 608301, -- TBA
 ['AIM-9J'] = 1, -- TBA
 ['AIM-9JULI'] = 1, -- TBA
 ['AIM-9L'] = 1, -- TBA
@@ -77,7 +77,7 @@ local weaponcost = {
 ['AIM_54A_Mk60'] = 1, -- TBA
 ['AIM_54C_Mk47'] = 1, -- TBA
 ['AIM_7'] = 1, -- TBA
-['AIM_9'] = 178387,  -- 24 MAY 2022 AIM-9M
+['AIM_9'] = 156157,  -- 24 MAY 2022 AIM-9M
 ['AIM-9X'] = 460807, -- 24 MAY 2022
 ['CATM_9M'] = 1, -- TBA
 ['GAR-8'] = 1, -- TBA 1st Gen Sidewinder
